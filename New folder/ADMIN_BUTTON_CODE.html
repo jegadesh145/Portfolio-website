@@ -1,0 +1,58 @@
+<!-- Add this to your portfolio's contact section or header for easy access -->
+
+<!-- ADMIN QUICK ACCESS LINK -->
+<style>
+    .admin-access {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 999;
+    }
+
+    .admin-btn {
+        background: linear-gradient(135deg, #00ffc8, #0099ff);
+        color: #0f0f1e;
+        border: none;
+        padding: 15px 25px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: 600;
+        box-shadow: 0 10px 30px rgba(0, 255, 200, 0.3);
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .admin-btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 255, 200, 0.5);
+    }
+
+    @media (max-width: 768px) {
+        .admin-access {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .admin-btn {
+            padding: 12px 20px;
+            font-size: 14px;
+        }
+    }
+</style>
+
+<div class="admin-access">
+    <a href="admin.html" class="admin-btn" title="View form submissions">
+        <i class="fas fa-lock"></i> Admin
+    </a>
+</div>
+
+<!-- QUICK INFO: 
+- Default Admin Password: admin123
+- Change it in admin.html file
+- All form submissions saved automatically
+- Export to CSV or JSON
+-->
